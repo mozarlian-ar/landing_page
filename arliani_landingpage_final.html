@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moza Arliani - Network & Server Enthusiast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a0f1d',
+                            card: '#111827',
+                            cardHover: '#1f293d',
+                            cyan: '#00f2fe',
+                            blue: '#4facfe',
+                            accent: '#38bdf8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .glow-text { text-shadow: 0 0 12px rgba(56, 189, 248, 0.5); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0f1d; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #38bdf8; }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-cyan selection:text-brand-dark">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2 text-xl font-bold tracking-wider font-mono text-white hover:text-brand-cyan transition">
+                <i class="ph-bold ph-terminal-window text-brand-cyan text-2xl"></i>
+                <span>MOZA<span class="text-brand-cyan">.ARLIANI</span></span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-brand-cyan transition">Tentang</a>
+                <a href="#skills" class="hover:text-brand-cyan transition">Keahlian</a>
+                <a href="#projects" class="hover:text-brand-cyan transition">Proyek</a>
+                <a href="#contact" class="hover:text-brand-cyan transition">Kontak</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-brand-blue to-brand-cyan text-brand-dark font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition shadow-lg shadow-cyan-500/10">
+                <i class="ph-bold ph-paper-plane-tilt"></i> Hubungi
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-24 pb-16 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-40 -z-10"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-cyan/10 rounded-full blur-3xl -z-10"></div>
+
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-700/80 text-xs font-mono text-brand-accent mb-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Technology Process
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white">
+                Halo, saya <span class="bg-gradient-to-r from-brand-blue via-brand-cyan to-teal-300 bg-clip-text text-transparent glow-text">Moza Arliani</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                Memiliki ketertarikan pada teknologi infrastruktur IT dan sedang mengembangkan keterampilan dalam Linux Server, virtualisasi, konfigurasi jaringan, serta administrasi sistem.
+            </p>
+
+            <div class="max-w-md mx-auto bg-slate-950 border border-slate-800 rounded-lg p-3 font-mono text-xs text-left text-slate-300 shadow-xl flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2 overflow-x-auto whitespace-nowrap">
+                    <span class="text-emerald-400">IT & Systems Explorer</span>
+                </div>
+                <span class="px-2 py-0.5 bg-emerald-500/10 text-emerald-400 text-[10px] rounded border border-emerald-500/20">ONLINE</span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#projects" class="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-gradient-to-r from-brand-blue to-brand-cyan text-brand-dark font-bold hover:shadow-lg hover:shadow-cyan-500/20 transition flex items-center justify-center gap-2">
+                    <i class="ph-bold ph-folder-open text-lg"></i> Lihat Proyek & Tugas
+                </a>
+                <a href="https://wa.me/6289694831818" target="_blank" rel="noopener" class="w-full sm:w-auto px-6 py-3.5 rounded-lg bg-slate-900 border border-slate-700 hover:border-brand-accent text-slate-200 font-semibold transition flex items-center justify-center gap-2">
+                    <i class="ph-bold ph-whatsapp-logo text-lg"></i> Chat WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-slate-950/50 border-y border-slate-800/60 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+                <div class="bg-brand-card border border-slate-800 rounded-xl p-6 relative shadow-2xl">
+                    <div class="flex items-center gap-2 pb-4 border-b border-slate-800 mb-4">
+                        <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+                        <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                        <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                        <span class="text-xs font-mono text-slate-400 ml-2">sysinfo.sh</span>
+                    </div>
+                    <div class="space-y-3 font-mono text-sm leading-relaxed">
+                        <p><span class="text-brand-accent">Nama</span> : Moza Arliani</p>
+                        <p><span class="text-brand-accent">Jurusan</span> : Teknik Jaringan Komputer & Telekomunikasi</p>
+                        <p><span class="text-brand-accent">Fokus</span> : Linux Server, VirtualBox, DNS BIND9, Mikrotik</p>
+                        <p><span class="text-brand-accent">Status</span> : Proyek Komputer & Jaringan</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h2 class="text-3xl font-bold text-white tracking-tight flex items-center gap-3">
+                        <i class="ph-bold ph-user-circle text-brand-cyan"></i> Tentang Saya
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Saya dari jurusan <strong class="text-white">Teknik Jaringan Komputer dan Telekomunikasi</strong> yang memiliki ketertarikan mendalam pada dunia administrator jaringan dan server Linux.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Sedang mendalami konfigurasi adapter jaringan (VirtualBox NAT & Bridged), troubleshooting alokasi IP Netplan Ubuntu, membangun server DNS (BIND9), hingga manajemen router Mikrotik dan Cisco.
+                    </p>
+                    <div class="pt-2 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-slate-300 rounded-md text-xs font-mono">#UbuntuServer</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-slate-300 rounded-md text-xs font-mono">#Netplan</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-slate-300 rounded-md text-xs font-mono">#BIND9</span>
+                        <span class="px-3 py-1 bg-slate-900 border border-slate-800 text-slate-300 rounded-md text-xs font-mono">#VirtualBox</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-white tracking-tight">Keahlian & Kompetensi</h2>
+            <p class="text-slate-400 text-sm mt-2">Berbagai bidang dan teknologi yang sedang saya pelajari dan kembangkan melalui praktik serta eksplorasi di bidang jaringan komputer.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div class="bg-brand-card border border-slate-800 p-6 rounded-xl hover:border-brand-cyan/50 hover:bg-brand-cardHover transition duration-300 group">
+                <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-brand-cyan flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+                    <i class="ph-bold ph-linux-logo"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Linux Systems</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Instalasi dan konfigurasi Ubuntu Server, pemahaman CLI Linux, manajemen permission file (<code class="text-brand-accent">chmod</code>), dan repositori.
+                </p>
+            </div>
+
+            <div class="bg-brand-card border border-slate-800 p-6 rounded-xl hover:border-brand-cyan/50 hover:bg-brand-cardHover transition duration-300 group">
+                <div class="w-12 h-12 rounded-lg bg-blue-500/10 text-brand-blue flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+                    <i class="ph-bold ph-network"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Netplan & IP Config</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Pengaturan DHCP dan Static IP pada interface <code class="text-brand-accent">enp0s3</code> dan <code class="text-brand-accent">enp0s8</code> di Ubuntu via Netplan YAML.
+                </p>
+            </div>
+
+            <div class="bg-brand-card border border-slate-800 p-6 rounded-xl hover:border-brand-cyan/50 hover:bg-brand-cardHover transition duration-300 group">
+                <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+                    <i class="ph-bold ph-globe-hemisphere-west"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">DNS Server (BIND9)</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Konfigurasi Forward & Reverse Zone (<code class="text-brand-accent">db.192</code>), pengujian nslookup, dan resolusi domain lokal server.
+                </p>
+            </div>
+
+            <div class="bg-brand-card border border-slate-800 p-6 rounded-xl hover:border-brand-cyan/50 hover:bg-brand-cardHover transition duration-300 group">
+                <div class="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+                    <i class="ph-bold ph-desktop-tower"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">VirtualBox & Hardware</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Setup VM, pengalokasian adapter (NAT, Host-Only, Bridged), pengkabelan UTP (Crimping), serta troubleshooting jaringan fisik.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-950/50 border-t border-slate-800/60 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-white tracking-tight">Proyek yang telah diselesaikan</h2>
+                    <p class="text-slate-400 text-sm mt-2">Dokumentasi hasil praktik</p>
+                </div>
+                <span class="text-xs font-mono text-brand-accent mt-4 md:mt-0">Total Proyek Selesai: 03</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div class="bg-brand-card border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-3">
+                            <span>VirtualBox / Linux</span>
+                            <span class="text-emerald-400">SUCCESS</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Setup Dual-Adapter Netplan</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Konfigurasi interface jaringan <code class="text-brand-accent">enp0s3</code> (NAT Internet) & <code class="text-brand-accent">enp0s8</code> (Host-Only Local) di Ubuntu Server menggunakan Netplan YAML.
+                        </p>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-900/60 border-t border-slate-800/60 flex items-center justify-between text-xs font-mono text-slate-400">
+                        <span>Status: Operational</span>
+                        <i class="ph-bold ph-check-circle text-emerald-400 text-base"></i>
+                    </div>
+                </div>
+
+                <div class="bg-brand-card border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-3">
+                            <span>BIND9 / DNS Server</span>
+                            <span class="text-emerald-400">CONFIGURED</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">DNS Server & Reverse Lookup</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Membuat domain server lokal, konfigurasi zona forward dan file PTR <code class="text-brand-accent">db.192</code> untuk resolving IP ke domain via <code class="text-brand-accent">nslookup</code>.
+                        </p>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-900/60 border-t border-slate-800/60 flex items-center justify-between text-xs font-mono text-slate-400">
+                        <span>Status: Active</span>
+                        <i class="ph-bold ph-check-circle text-emerald-400 text-base"></i>
+                    </div>
+                </div>
+
+                <div class="bg-brand-card border border-slate-800 rounded-xl overflow-hidden hover:border-slate-700 transition flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-3">
+                            <span>Network Security</span>
+                            <span class="text-brand-cyan">COMPLETED</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Troubleshooting Permissions Netplan</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Mengatasi warning keamanan file YAML netplan dengan penguncian akses <code class="text-brand-accent">chmod 600</code> dan penanganan error syntax interface.
+                        </p>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-900/60 border-t border-slate-800/60 flex items-center justify-between text-xs font-mono text-slate-400">
+                        <span>Status: Documented</span>
+                        <i class="ph-bold ph-shield-check text-brand-cyan text-base"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 max-w-4xl mx-auto">
+        <div class="bg-brand-card border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-60 h-60 bg-brand-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="text-center max-w-xl mx-auto mb-8">
+                <h2 class="text-3xl font-bold text-white">Hubungi Moza</h2>
+                <p class="text-slate-400 text-sm mt-2">Punya pertanyaan seputar jaringan, atau tugas, silakan hubungi salah satu kontak di bawah.</p>
+            </div>
+
+            <!-- Contact Cards -->
+            <div class="grid grid-cols-3 gap-3 mb-8">
+                <a href="https://wa.me/6289694831818" target="_blank" rel="noopener" class="group flex flex-col sm:flex-row items-center gap-2 sm:gap-3 bg-slate-900 border border-slate-800 hover:border-emerald-400/60 rounded-lg px-3 py-3 text-center sm:text-left transition">
+                    <div class="w-9 h-9 shrink-0 rounded-md bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl">
+                        <i class="ph-bold ph-whatsapp-logo"></i>
+                    </div>
+                    <div class="min-w-0">
+                        <p class="text-[10px] font-mono text-slate-400">WHATSAPP</p>
+                        <p class="text-xs text-white font-semibold break-all">+62 896 9483 1818</p>
+                    </div>
+                </a>
+
+                <a href="mailto:arlianzaar@gmail.com" class="group flex flex-col sm:flex-row items-center gap-2 sm:gap-3 bg-slate-900 border border-slate-800 hover:border-brand-cyan/60 rounded-lg px-3 py-3 text-center sm:text-left transition">
+                    <div class="w-9 h-9 shrink-0 rounded-md bg-cyan-500/10 text-brand-cyan flex items-center justify-center text-xl">
+                        <i class="ph-bold ph-envelope-simple"></i>
+                    </div>
+                    <div class="min-w-0">
+                        <p class="text-[10px] font-mono text-slate-400">GMAIL</p>
+                        <p class="text-xs text-white font-semibold break-all">arlianzaar@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="https://instagram.com/arlianzar" target="_blank" rel="noopener" class="group flex flex-col sm:flex-row items-center gap-2 sm:gap-3 bg-slate-900 border border-slate-800 hover:border-pink-400/60 rounded-lg px-3 py-3 text-center sm:text-left transition">
+                    <div class="w-9 h-9 shrink-0 rounded-md bg-pink-500/10 text-pink-400 flex items-center justify-center text-xl">
+                        <i class="ph-bold ph-instagram-logo"></i>
+                    </div>
+                    <div class="min-w-0">
+                        <p class="text-[10px] font-mono text-slate-400">INSTAGRAM</p>
+                        <p class="text-xs text-white font-semibold break-all">@arlianzar</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Form: kirim pesan lewat WhatsApp -->
+            <form id="waForm" class="space-y-4 max-w-xl mx-auto">
+                <div>
+                    <label class="block text-xs font-mono text-slate-400 mb-2">NAMA LENGKAP</label>
+                    <input id="waName" type="text" placeholder="Masukkan nama..." required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-cyan transition">
+                </div>
+                <div>
+                    <label class="block text-xs font-mono text-slate-400 mb-2">PESAN / PERTANYAAN</label>
+                    <textarea id="waMsg" rows="4" placeholder="Tuliskan pesan Anda di sini..." required class="w-full bg-slate-900 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-cyan transition"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3.5 rounded-lg bg-gradient-to-r from-brand-blue to-brand-cyan text-brand-dark font-bold hover:shadow-lg hover:shadow-cyan-500/20 transition flex items-center justify-center gap-2">
+                    <i class="ph-bold ph-whatsapp-logo text-lg"></i> Kirim via WhatsApp
+                </button>
+            </form>
+
+            <div class="mt-10 pt-6 border-t border-slate-800/80 flex items-center justify-center gap-6 text-slate-400">
+                <a href="https://wa.me/6289694831818" target="_blank" rel="noopener" aria-label="WhatsApp" class="hover:text-brand-cyan text-xl transition"><i class="ph-bold ph-whatsapp-logo"></i></a>
+                <a href="https://instagram.com/arlianzar" target="_blank" rel="noopener" aria-label="Instagram" class="hover:text-brand-cyan text-xl transition"><i class="ph-bold ph-instagram-logo"></i></a>
+                <a href="mailto:arlianzaar@gmail.com" aria-label="Email" class="hover:text-brand-cyan text-xl transition"><i class="ph-bold ph-envelope-simple"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/60 text-center text-xs text-slate-500">
+        <p>© By Moza Arliani</p>
+    </footer>
+
+    <script>
+        document.getElementById('waForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var name = document.getElementById('waName').value.trim();
+            var msg = document.getElementById('waMsg').value.trim();
+            var text = 'Halo Moza, saya ' + name + '.\n\n' + msg;
+            window.open('https://wa.me/6289694831818?text=' + encodeURIComponent(text), '_blank');
+        });
+    </script>
+
+</body>
+</html>
